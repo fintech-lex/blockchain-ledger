@@ -1,28 +1,25 @@
 # PyChain Ledger
 ################################################################################
-# You’ll make the following updates to the provided Python file for this
-# Challenge, which already contains the basic `PyChain` ledger structure that
-# you created throughout the module:
 
-# Step 1: Create a Record Data Class
+# Challenge 1: Create a Record Data Class
 # * Create a new data class named `Record`. This class will serve as the
 # blueprint for the financial transaction records that the blocks of the ledger
 # will store.
 
-# Step 2: Modify the Existing Block Data Class to Store Record Data
+# Challenge 2: Modify the Existing Block Data Class to Store Record Data
 # * Change the existing `Block` data class by replacing the generic `data`
 # attribute with a `record` attribute that’s of type `Record`.
 
-# Step 3: Add Relevant User Inputs to the Streamlit Interface
+# Challenge 3: Add Relevant User Inputs to the Streamlit Interface
 # * Create additional user input areas in the Streamlit application. These
 # input areas should collect the relevant information for each financial record
 # that you’ll store in the `PyChain` ledger.
 
-# Step 4: Test the PyChain Ledger by Storing Records
+# Challenge 4: Test the PyChain Ledger by Storing Records
 # * Test your complete `PyChain` ledger.
 
 ################################################################################
-# Imports
+# Library Imports & Ledger Prepaa
 import streamlit as st
 from dataclasses import dataclass
 from typing import Any, List
@@ -224,21 +221,17 @@ if st.button("Validate Chain"):
 # Then test the blockchain validation process by using your `PyChain` ledger.
 # To do so, complete the following steps:
 
-# 1. In the terminal, navigate to the project folder where you've coded the
-#  Challenge.
-
-# 2. In the terminal, run the Streamlit application by
+# 1. In the terminal, run the Streamlit application by
 # using `streamlit run pychain.py`.
 
-# 3. Enter values for the sender, receiver, and amount, and then click the "Add
+# 2. Enter values for the sender, receiver, and amount, and then click the "Add
 # Block" button. Do this several times to store several blocks in the ledger.
 
-# 4. Verify the block contents and hashes in the Streamlit drop-down menu.
+# 3. Verify the block contents and hashes in the Streamlit drop-down menu.
 # Take a screenshot of the Streamlit application page, which should detail a
-# blockchain that consists of multiple blocks. Include the screenshot in the
-# `README.md` file for your Challenge repository.
+# blockchain that consists of multiple blocks.
 
-# 5. Test the blockchain validation process by using the web interface.
+# 4. Test the blockchain validation process by using the web interface.
 # Take a screenshot of the Streamlit application page, which should indicate
 # the validity of the blockchain. Include the screenshot in the `README.md`
 # file for your Challenge repository.
